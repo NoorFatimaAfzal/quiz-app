@@ -54,7 +54,7 @@ def login():
     password = entry2.get()
     if username == "" and password == "":
         messagebox.showerror("Login", "Please enter username and password")
-    elif username == "noor" and password == "butt":
+    elif username == "admin" and password == "root":
         messagebox.showinfo("Login", "Login successful")
         label1.destroy()
         label2.destroy()
@@ -424,7 +424,7 @@ def show_result(score, correct_answers, wrong_answers, skipped_questions):
     )
     score_label.pack(pady=20)
 
-timer_seconds = 600  # 10 minutes = 600 seconds
+timer_seconds = 300  # 10 minutes = 600 seconds
 timer_label = Label(
     frame,
     font=("Comic Sans MS", 16),
