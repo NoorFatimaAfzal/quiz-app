@@ -8,6 +8,9 @@ root.title("First project")
 root.iconbitmap("favicon.ico")
 img1 = PhotoImage(file="uet.png")
 
+# image mai nearest sy image k pixels set hoty hain 
+# antialiasing tkinter sy khtm ho chuka hia
+
 frame = LabelFrame(
     root,
     text="ECAT app...",
@@ -66,6 +69,8 @@ def login():
         create_widgets()   
     else:
         messagebox.showerror("Login", "Login failed")
+
+# labels mai user interaction include nahi hota widgets mai hota hai        
 
 label1 = Label(
     root, 
