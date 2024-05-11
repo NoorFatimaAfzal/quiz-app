@@ -405,7 +405,6 @@ def calc():
         show_result(score, correct_answers, wrong_answers, skipped_questions)
         destroy_widgets()
         try_again_image()
-    
 
 def show_result(score, correct_answers, wrong_answers, skipped_questions):
     # Destroy existing widgets
