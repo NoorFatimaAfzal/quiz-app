@@ -139,7 +139,7 @@ def start_timer():
     if timer_seconds > 0:
         timer_label.config(text=f"Time left: {timer_seconds} seconds")
         timer_seconds -= 1
-        timer_label.after(300, start_timer)
+        timer_label.after(1000, start_timer)  # Update every second
     else:
         messagebox.showinfo("Timer", "Time's up!")
         root.destroy()
